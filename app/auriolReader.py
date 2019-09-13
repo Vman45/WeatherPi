@@ -7,7 +7,7 @@ import logging
 import signal
 import json
 
-HTTP_ENDPOINT = ""
+HTTP_ENDPOINT = ''
 
 def main():
 	logger.info('Starting')
