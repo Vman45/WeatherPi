@@ -56,7 +56,7 @@ class Uploader(Thread):
             self.logger.info(e)
             return False
 
-        if r.status_code == 500:
+        if r.status_code == 409:
             self.logger.info('Possible format error with {:s}\nDeleting from the queue'.format(json.dumps(data)))
             return True
 
